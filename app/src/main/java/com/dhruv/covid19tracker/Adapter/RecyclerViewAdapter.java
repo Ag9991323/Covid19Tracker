@@ -23,7 +23,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public RecyclerViewAdapter(ArrayList<singleRow> lst, Context context) {
         this.lst = lst;
         this.context = context;
-        Log.d("errorlistsize ",""+lst.size());
+
     }
 
     public holder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -38,7 +38,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         String  confirmed = lst.get(position).getConfirmed();
         String  Cured = lst.get(position).getCured();
         String  death = lst.get(position).getDeath();
-        Log.d("error"+position,"onBindViewHolder: "+name);
+
 
         holder.confimed.setText(confirmed);
         holder.name.setText(name);
